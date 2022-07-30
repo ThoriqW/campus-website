@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>University Website Design</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="gambar/logo.png" alt=""></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<h1>Contact Us</h1>
+
+	</section>
+
+<!---------------- Contact Us ---------------->
+
+	<section class="location">
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.340505933597!2d119.87352531475359!3d-0.8867373993531257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d8bedd317bd70c7%3A0xe0e4269ff819d223!2sSTMIK%20Bina%20Mulia%20Palu!5e0!3m2!1sid!2sid!4v1618209550777!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+	</section>
+
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5>Jl. Soeprapto No.38, Besusu Tengah</h5>
+						<p>Kec. Palu Timur, Kota Palu, Sulteng</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>+62 82296709235</h5>
+						<p>Monday to Saturday, 10AM to 6PM</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-envelope-o"></i>
+					<span>
+						<h5>thoriqwajedi88@gmail.com</h5>
+						<p>Email us your query</p>
+					</span>
+				</div>
+			</div>
+			<div class="contact-col">
+				<form action="form-handler.php" method="post">
+					<input type="text" name="name" placeholder="Enter your name" required="">
+					<input type="email" name="email" placeholder="Enter email address" required="">
+					<input type="text" name="subject" placeholder="Enter your subject" required="">
+					<textarea rows="8" name="message" placeholder="Message"></textarea>
+					<button type="submit" class="hero-btn red-btn">Send Message</button>
+				</form>
+			</div>
+	</section>
+
+<!---------------- Footer ---------------->
+
+	<section class="footer">
+
+		<h4>About Us</h4>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit.Iusto distinctio corporis illum, <br> qui deserunt fugit a ex, temporibus laudantium.</p>
+
+		<div class="icons">
+			<a href="https://www.facebook.com/asd.ova.56/" target="_blank"><i class="fa fa-facebook"></i></a>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+
+		<p>Made With <i class="fa fa-heart-o"></i> By Moh Thoriq Wajedi </p>
+		
+	</section>
+
+
+
+
+
+	
+<!---------- JavaScript For Toggle Menu ----------->
+	<script>
+		
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu(){
+			navLinks.style.right = "0";
+		}
+
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+
+	</script>
+
+</body>
+</html>
